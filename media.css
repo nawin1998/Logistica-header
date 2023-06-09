@@ -1,0 +1,60 @@
+@media only screen and (min-width:200px) and (max-width:991px){
+    .navcontainer{
+        position: relative;
+        width: 100%;
+    }
+    .navlinks ul{
+        display: none;
+    }
+    .logo{
+        position: relative;
+        width: 55%;
+    }
+    .checkbtn{
+        position: absolute;
+        display: block;
+        width: 10%;
+        top: 20px;
+        left: 20rem;
+        font-size: 35px;
+    }
+    .navlinks ul{
+        position: absolute;
+        background-color: #ffffff;
+        width: 20rem;
+        height: 35.5rem;
+        right: 20rem;
+        top: 100px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .navlinks a{
+        position: relative;
+        top: 5px;
+        line-height: 2;
+        font-size: 20px;
+       
+    }
+    .navlinks p{
+        font-size: 20px;
+    }
+    .navlinks li:hover .downer{
+        position: relative;
+        display: block;
+        height: 240px;
+        width: 240px;
+        top: 10px;
+        left: 40px;
+        color: black;
+        text-align: center;
+        line-height: 2;
+    }
+    .downer li a{
+        top: 0px;
+    }
+
+    #check:checked ~ ul{
+        display: inline-block;
+    }
+}
