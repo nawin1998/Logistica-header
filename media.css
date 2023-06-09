@@ -1,7 +1,9 @@
 @media only screen and (min-width:200px) and (max-width:991px){
     .navcontainer{
-        position: relative;
+        position: sticky;
+        top: 0;
         width: 100%;
+        border-top: 5px solid #ff3e41;
     }
     .navlinks ul{
         display: none;
@@ -13,18 +15,19 @@
     .checkbtn{
         position: absolute;
         display: block;
-        width: 10%;
-        top: 20px;
+        width: 12%;
+        top: 10px;
         left: 20rem;
         font-size: 35px;
+        border: 3px solid black;
     }
     .navlinks ul{
         position: absolute;
         background-color: #ffffff;
         width: 20rem;
         height: 35.5rem;
-        right: 20rem;
-        top: 100px;
+        left: 0px;
+        top: 78px;
         text-align: center;
         align-items: center;
         justify-content: center;
@@ -32,26 +35,39 @@
     .navlinks a{
         position: relative;
         top: 5px;
+        right: 7rem;
         line-height: 2;
-        font-size: 20px;
-       
+        font-size: 18px;
+        font-weight: 400;
     }
     .navlinks p{
-        font-size: 20px;
+        display: none;
+    }
+    .active a{
+        color: #ff3e41;
+    }
+    .navlinks a:hover{
+        border-top: none;
     }
     .navlinks li:hover .downer{
         position: relative;
         display: block;
-        height: 240px;
+        height: 235px;
         width: 240px;
         top: 10px;
-        left: 40px;
+        left: 10px;
         color: black;
         text-align: center;
-        line-height: 2;
+        border: 2px solid #808080;
     }
     .downer li a{
         top: 0px;
+    }
+    .downer li{
+        position: relative;
+        top: 10px;
+        left: 40px;
+        margin-top: 0px;
     }
 
     #check:checked ~ ul{
